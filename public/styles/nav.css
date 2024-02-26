@@ -1,0 +1,27 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em; /* 1.5ems of space on the right and left */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+
+nav span {
+  font-family: 'Bungee', sans-serif; 
+}
+
+.newTweetText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+}
+
+.new-tweet-text {
+  margin-right: 10px; /* Add some spacing between text and icon */
+}

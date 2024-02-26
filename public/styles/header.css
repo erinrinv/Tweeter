@@ -1,0 +1,26 @@
+/* header.css */
+
+header {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffd1dc; 
+  background-image: url('/images/ag-square.png'); 
+  z-index: -1;
+ 
+  
+  align-items: center; /* Center horizontally */
+}
+
+.avatar {
+  margin-bottom: 20px; /* Add space between avatar and name */
+}
+
+.name {
+  display:flex;
+   
+}
+
+
