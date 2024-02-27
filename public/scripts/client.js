@@ -59,30 +59,26 @@ loadTweets();
 
 
 
-// Add event listener for form submission
-$(document).ready(function() {
-  $('form.tweetform').submit(function(event) {
-    // Prevent default form submission behavior
-    event.preventDefault();
+$("#new-tweet-form").submit(function(event) {
+  event.preventDefault();
+  const maxChar = 140;
+  const inputLength = $(this).find("#tweet-text").val().length;
 
-    // Serialize form data
-    const formData = $(this).serialize();
+  $("#error-message-empty").slideUp("slow");
+  $("#error-message-tooLong").slideUp("slow");
 
-    // Send POST request with AJAX
-    $.ajax({
-      method: 'POST',
-      url: '/tweets/',
-      data: formData
-    })
-    .then(function(response) {
-      // Optionally, you can handle the response from the server here
-      console.log('Tweet successfully submitted:', response);
-
-      // After successful submission, you may want to fetch and render tweets again
-      // renderTweets(response); // Assuming the response contains updated tweet data
-    })
-    .catch(function(error) {
-      console.error('Error submitting tweet:', error);
+  if (!inputLength) {
+    $("#error-message-empty").slideDown("slow");
+    $("#error-message-tooLong").hide();
+  } else if (inputLength - maxChar > 0) {
+    $("#error-message-tooLong").slideDown("slow");
+    $("#error-message-empty").hide();
+  } else {
+    const newTweet = $(this).serialize();
+    $.post("/tweets/", newTweet, () => {
+      $(this).find("#tweet-text").val("");
+      $(this).find(".counter").val(maxChar);
+      loadTweets();
     });
-  });
+  }
 });
