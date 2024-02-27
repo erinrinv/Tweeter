@@ -39,7 +39,7 @@ const renderTweets = function(tweets) {
     // Create a tweet element for each tweet object
     const $tweet = createTweetElement(tweet);
     // Append the tweet element to the tweets container
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
   });
 };
 
@@ -67,4 +67,4 @@ const createTweetElement = function(tweet) {
   return $tweet;
 };
 
-renderTweets(data);
+//renderTweets(data);
