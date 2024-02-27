@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
 
     <!-- Google Fonts-->
@@ -25,7 +26,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script> 
 
   </head>
 
@@ -69,7 +70,27 @@
         </div>
 
       </form>
+
+
     </section>
+    
+    <article class="tweet">
+      <header>
+          <img src="/images/profile.png" alt="Profile Picture">
+          <div class="tweet-header">
+              <h3>John Doe</h3>
+              <p>@johndoe</p>
+          </div>
+      </header>
+      <p class="tweet-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum turpis ac mi commodo, in egestas odio bibendum.</p>
+      <footer>
+          <span class="tweet-icon"><i class="fas fa-heart"></i> 42</span>
+          <span class="tweet-icon"><i class="fas fa-retweet"></i> 12</span>
+          <span class="tweet-icon"><i class="fas fa-comment"></i> 5</span>
+      </footer>
+  </article>
+  
+
   <!-- Additional content can go here -->
 </main>
 

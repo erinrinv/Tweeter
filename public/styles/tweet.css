@@ -1,0 +1,20 @@
+/* Regular State */
+.tweet {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.tweet:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.tweet footer .tweet-icon i {
+  color: #999; /* Initial color */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.tweet footer .tweet-icon i:hover {
+  color: #1da1f2; /* Change color on hover */
+}
