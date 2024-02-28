@@ -1,32 +1,63 @@
-.tweetBox {
+.new-tweet {
+  display:flex;
+  flex-direction: column;
+  width: 90%;
+  background-color:#f4f1ec;
+  font-family: sans-serif;
+}
+
+#new-tweet-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  font-family: SourceSansPro, sans-serif;
 }
-.tweetCounter {
+
+#tweet-text {
+  background-color: #f4f1ec;
+  border: hidden;
+  border-bottom: 3px solid black;
+  margin-bottom: 5px;
+}
+
+.new-tweet-footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  font-family: Bungee, sans-serif;
+  font-family: 'Bungee', sans-serif;
+  font-size: 24px;
+  margin-top: 5px; 
 }
-.tweetbutton {
-  background-color: #4056a1;
+
+#submit {  
+  background-color: #4056A1;
   color: white;
+  border-style:groove;
+  font-weight: bolder;
 }
-textarea {
-  outline: none;
-  border-bottom-width: thick;
-  border-top-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
-  background-color: transparent;
+
+#submit:hover {  
+  background-color: lightsteelblue;
 }
-.tweetform {
-  width: 100%;
+
+.invalid {
+  color: red
 }
-.container {
-  width: 100%;
-}
-.new-tweet {
-  width: 100%;
+
+.error-message-box {
+    display: flex;
+    border: 3px solid red;
+    color: red;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.fa-exclamation-triangle {
+  margin-left: 5px;
+  margin-right: 5px;
 }

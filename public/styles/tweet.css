@@ -1,20 +1,70 @@
-/* Regular State */
+#tweets-container {
+  width: 90%;
+  display:flex;
+  background-color:#f4f1ec;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
 .tweet {
-  border: 1px solid #ddd;
+  border: 3px solid black;
+  width: 100%;
+  margin-top: 20px;
   padding: 20px;
-  margin-bottom: 20px;
-  transition: box-shadow 0.3s;
+}
+
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.tweet img {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 70px;
+  max-height: 70px;
+  height: auto;
+  width: auto;
+}
+
+.user-handle {
+  color:#ced3e5;
+}
+
+.tweet-text {
+  font-size: 18px;
+  padding: 10px;
 }
 
 .tweet:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  box-shadow: 10px 10px #C8C8C8;
 }
 
-.tweet footer .tweet-icon i {
-  color: #999; /* Initial color */
-  transition: color 0.3s; /* Smooth transition */
+.tweet-footer {
+  border-top-style: solid;
+  border-width: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 15px;
 }
 
-.tweet footer .tweet-icon i:hover {
-  color: #1da1f2; /* Change color on hover */
+.tweet-response i {
+  padding: 5px;
+  color: #4056A1;
+}
+
+.tweet-response i:hover {
+  color: #ffd1dc;
 }

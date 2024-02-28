@@ -1,26 +1,38 @@
 /* header.css */
 
-header {
+.profile-header {
+  width: 100%;
+  background-image: url('/images/ag-square.png'); 
+  margin-top: 100px;
   display: flex;
-  height: 400px;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+
+  
   background-color: #ffd1dc; 
-  background-image: url('/images/ag-square.png'); 
+  
   z-index: -1;
  
   
   align-items: center; /* Center horizontally */
 }
 
-.avatar {
-  margin-bottom: 20px; /* Add space between avatar and name */
+.user-image {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
+  justify-content: center;
 }
 
-.name {
-  display:flex;
-  justify-content: center;  
+.user-name {
+  margin-top: -30px;
+  font-size: 1.25rem;
 }
 
 
