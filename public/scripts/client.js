@@ -101,19 +101,3 @@ $(document).ready(function() {
   });
 });
 
-
-//Form toggle
-
-/* $(document).ready(function() {
-  // Event handler for the "Compose" button
-  $('.toggle-button').click(function() {
-    // Toggle the visibility of the new-tweet section with sliding animation
-    $('.new-tweet').slideToggle(400, function() {
-      // If the new-tweet section becomes visible after sliding down,
-      // focus on the textarea for user convenience
-      if ($('.new-tweet').is(':visible')) {
-        $('#tweet-text').focus();
-      }
-    });
-  });
-}); */
