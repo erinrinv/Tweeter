@@ -68,3 +68,9 @@
 .tweet-response i:hover {
   color: #ffd1dc;
 }
+
+@media only screen and (min-width: 1024px) {
+  #tweets-container {
+      width: 100%;
+    }
+  }
