@@ -2,7 +2,24 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+Build a simplified single-page Twitter clone using HTML, CSS, JS, jQuery and AJAX.
+
+
+## Features
+
+
+1. Start by writing a tweet in the tweet box and clicking on "Tweet". This will "Submit" the tweet to the back-end via AJAX.
+2. A successful POST request will then GET the tweet object back from the back-end and update the feed without having to refresh the page.
+3. Error messages will be displayed if an empty tweet or a tweet longer than 140 characters is being submitted.
+4. This app uses responsive design and will adjust depending on the display size.
+
+
+## Screenshots
+!["Main Page"](https://github.com/erinrinv/Tweeter/blob/master/public/images/tweetsquish.png)
+!["responsive design"](https://github.com/erinrinv/Tweeter/blob/master/public/images/tweetsquish.png)
+!["Error: blank submittion"](https://github.com/erinrinv/Tweeter/blob/master/public/images/error.png)
+!["Error: Over tweet limit"](https://github.com/erinrinv/Tweeter/blob/master/public/images/toomanycharacters.png)
+
 
 ## Getting Started
 
@@ -16,3 +33,4 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- nodemon
