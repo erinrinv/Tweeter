@@ -15,7 +15,7 @@ Build a simplified single-page Twitter clone using HTML, CSS, JS, jQuery and AJA
 
 
 ## Screenshots
-!["Main Page"](https://github.com/erinrinv/Tweeter/blob/master/public/images/tweetsquish.png)
+!["Main Page"](https://github.com/erinrinv/Tweeter/blob/master/public/images/tweethomepage.png)
 !["responsive design"](https://github.com/erinrinv/Tweeter/blob/master/public/images/tweetsquish.png)
 !["Error: blank submittion"](https://github.com/erinrinv/Tweeter/blob/master/public/images/error.png)
 !["Error: Over tweet limit"](https://github.com/erinrinv/Tweeter/blob/master/public/images/toomanycharacters.png)
